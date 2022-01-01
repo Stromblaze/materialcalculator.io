@@ -1,0 +1,90 @@
+<div id="output">
+						<p id="output-value" id="ro">4</p>
+					</div>
+					
+					
+					
+					<button onclick="sqrt()" id="rsub">&quot</button>
+					
+				<script>
+					function sqrt() {
+    var val = document.querySelector("#output-value").value
+    document.getElementById("output-value").value = Math.sqrt(val);
+  }
+  </script>
+  
+  
+  
+  
+  
+How do I add square root to my JavaScript/HTML calculator?
+javascript html calculator calc
+How do I add square root to my JavaScript/HTML calculator? Have been trying to add it for atleast 3 hours :(
+
+Also, how could I make a button that multiplies a number with itself (also in my calculator)?
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calc</title>
+<script>
+function myFunction(clickedId) {
+    document.calc.result.value+=clickedId;
+}
+function Clear() {
+    document.calc.result.value="";
+}
+function compute() {
+    try{
+    var inp=eval(document.calc.result.value);
+    document.calc.result.value=inp;
+    }catch(err){
+            document.calc.result.value="error";
+    }
+}
+function doMath(){
+var inputNum1=document.form1.input1.value;
+var result = Math.sqrt(inputNum1);
+document.form1.answer.value = result;
+}
+</script>
+</head>
+<body>
+<center>
+    <form name="calc">
+    <input type="text" name="result" size="30px" readonly>
+    </form>
+<table>
+  <tr>
+    <td><button type="button" id="1" onclick="myFunction(this.id)">1</button></td> <!--Skaitlis 1-->
+    <td><button type="button" id="2" onclick="myFunction(this.id)">2</button></td> <!--Skaitlis 2-->
+    <td><button type="button" id="3" onclick="myFunction(this.id)">3</button></td> <!--Skaitlis 3-->
+  </tr>
+  <tr>
+    <td><button type="button" id="4" onclick="myFunction(this.id)">4</button></td> <!--Skaitlis 4-->
+    <td><button type="button" id="5" onclick="myFunction(this.id)">5</button></td> <!--Skaitlis 5-->
+    <td><button type="button" id="6" onclick="myFunction(this.id)">6</button></td> <!--Skaitlis 6-->
+  </tr>
+  <tr>
+    <td><button type="button" id="7" onclick="myFunction(this.id)">7</button></td> <!--Skaitlis 7-->
+    <td><button type="button" id="8" onclick="myFunction(this.id)">8</button></td> <!--Skaitlis 8-->
+    <td><button type="button" id="9" onclick="myFunction(this.id)">9</button></td> <!--Skaitlis 9-->
+  </tr>
+  <tr>
+    <td><button type="button" id="0" onclick="myFunction(this.id)">0</button></td> <!--Skaitlis 0-->
+    <td><button type="button" id="+" onclick="myFunction(this.id)">+</button></td> <!--Plusa zīme-->
+    <td><button type="button" id="-" onclick="myFunction(this.id)">-</button></td> <!--Mīnusa zīme-->
+  </tr>
+  <tr>
+    <td><button type="button" id="*" onclick="myFunction(this.id)">x</button></td> <!--Reizināšanas zīme-->
+    <td><button type="button" id="/" onclick="myFunction(this.id)">÷</button></td> <!--Dalīšanas zīme-->
+    <td><button type="button" id="ANS" onclick="compute()">=</button></td> <!--Vienādības zīme-->
+  </tr>
+</table>
+
+<td><button type="button" id="CLEAR" onclick="Clear()">c</button></td> <!--Izdzēst rezultātu-->
+<td><button type="button" id="3.141592653589793" onclick="myFunction(this.id)">π</button></td> <!--Skaitlis 3.14...-->
+<td><button type="button" id="6.283185307179586" onclick="myFunction(this.id)">τ</button></td> <!--Skaitlis 6.28...-->
+</center>
+</body>
+</html>

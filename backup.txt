@@ -1,0 +1,5 @@
+<form  style="float: left;">
+&nbsp;&nbsp;<input type="number" id="ro" placeholder="Place number to find root" >
+<button type="submit" onclick="sqrt()" id="rsub">=</button>
+<input type="reset" value="C"id="rset">
+</form>

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Stromium Scientific Calculator Online</title>
+<link rel = "icon" type = "image/png" href = "calculator.svg">
+    <!-- For apple devices -->
+<link rel = "apple-touch-icon" type = "image/png" href = "calculator.svg"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Calculator, Root Calculator, Simple Calculator, Stromium Calculator, Evaluation, sin, sin calculator, cos, cos calculator, tan, tan calculator, 1/cos, 1/cos calculator, 1/sin, 1/sin calculator, 1/tan, 1/tan calculator, cos^-1, cos^-1 calculator, sin^-1, sin^-1 calculator, tan^-1, tan^1 calculator, root, Exponent, Exponent Calculator, cube root, cube root calculator, Calculator">
+
+<meta name="description" content="Indian Online Calculator by Stromium.">
+<meta charset="UTF-8">
+<meta name="theme-color" content="#FFFFFF">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/Style.css">
+</head>
+<body onload="myFunctionLoad()" style="margin:0;">
+
+<div id="loader"><br><br><br><br>
+<p style="text-align: center;">
+<img src="Calculator.svg" height="200px">
+<br>Stromium Calculator<br>Getting your page ready.<br><br>
+<img src="img/load.svg" width="11%" class="rotate" /></p>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<div id="header">
+
+<div class="dropdown">
+  <button onclick="myFunctionMenu()" class="dropbtn">
+<i onclick="toggleLike()" class="fa fa-bars"></i></button>
+
+  <div id="myDropdown" class="dropdown-content">
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__fNkDiBUQ0RPOEs1QkxHMk1PRkdKUlVENTVYSExCNy4u" target="_blank"><i class="fa fa-commenting"></i> Feedback</a>
+    <a href="#"><i class="fa fa-exclamation-circle"></i> Help</a>
+    <a href="#About"><i class="fa fa-question-circle"></i> About</a>
+  </div>
+</div>
+
+<a href="index.html" id="brand">Stromium Calculator</a>
+  <button id="toogle" onclick="myFunction()">
+<i onclick="myFunctionToggle(this)" class="fa fa-toggle-off"></i>
+</button>
+<a href="#" id="link"><i class="fa fa-user-o"></i></a>&nbsp;
+<br>
+
+<a href="Scientific Calculator.html" id="link"><i class="fa fa-flask"></i>Scientific</a>
+<a href="" id="link"><i class="fa fa-balance-scale"></i>More</a>
+
+<hr noshade>
+ </div><!--End Header-->
+
+
+</div>
+<script>
+var myVar;
+
+function myFunctionLoad() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+}
+</script>

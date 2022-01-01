@@ -1,0 +1,227 @@
+body{
+    font-family: Segoe UI Regular;	background-color: white;
+font-size: 20px;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+transition: 0.8s;
+margin: 3px;
+
+}
+@font-face {
+        font-family: 'Segoe UI Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+        }
+    @keyframes rotation{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(359deg);
+        }
+
+    }
+
+.rotate{
+    animation: rotation 1s infinite linear;
+}
+a{
+    text-decoration: none;
+    color: #7D93E0;
+    
+}
+#link {
+padding: 5px 15px;
+border-radius: 5px;
+background: #DBE3FF;
+font-size: 18px;
+}
+#link:active{
+font-size:15px;
+}
+#header{
+position: sticky;
+width: 100%;
+top: 0;
+background: transparent;
+color: #7D93E0;
+text-align: center;
+}
+#brand{
+text-decoration: none;
+color: #2196F3;
+font-family: Segoe UI Regular;
+}
+.dark-mode {
+    background-color: #282c34;
+    color: white;
+transition: 0.8s;
+}
+#toogle{
+background: transparent;
+color: #7D93E0;
+border-radius: 5px;
+font-size: 25px;
+border: none;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #7D93E0;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: transparent;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+text-align: left;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:active{background-color: #7D93E0}
+.show {display:block;}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sciout{
+    padding:5px;
+    border: none;
+    background: transparent;
+    font-family: Segoe UI;
+text-align: centre;
+    }
+    #sciOutPut{
+        font-size:18px;
+        padding:3px;
+        margin:2px;
+        cursor:text;
+        text-align: right;
+        background-color:transparent;
+        border:1px solid white;
+        border-radius: 4px;
+        height: 100px;
+        }
+    .scifunc{
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            width:50px;
+            height:25px;
+            margin:1px;
+            border:none;
+            border-radius: 3px;
+            font-family: Segoe UI;
+            font-size:16px;
+            font-weight: bold;
+            color: #7D93E0;
+            background-color:transparent;
+            }
+    .scifunc:active {
+    background-color: lightgrey;
+    color:#7D93E0;
+    }
+    .scinm{
+        display: inline-block;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 5px 0px;
+        text-align: center;
+        width:50px;
+        height:30px;
+        margin:1px;
+        border: none;
+        border-radius: 3px;
+        font-family: Segoe UI;
+        font-size:21px;
+        font-weight:bold;
+        color: #70D552;
+        background-color: transparent#CC0000;
+        }
+        .scinm:active {
+            background-color: lightgrey;
+            color: #70D552;
+            }
+        .sciop{
+        display: inline-block;
+    display: table-cell
+    ;vertical-align: middle;
+                padding: 5px 0px;
+                text-align: center;
+                width:50px;
+                height:30px;
+                margin:1px;
+                border: none;
+                border-radius: 5px;
+                font-family: Segoe UI;
+                font-size:16px;
+                font-weight:bold;
+                color: #C26AF9;
+                background-color: #E7C4FD;
+                }
+    .sciop:active {
+        background-color: lightgrey;
+        color: #C26AF9;
+        }
+    .scird{
+        display: inline-block;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        height:30px;
+        margin:1px;
+        border:1px solid #eeeeee;
+        border-radius: 3px;
+        font-family: Segoe UI;
+        font-size:13px;
+        }
+    .scieq{
+        display: inline-block;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 5px 0px;
+        text-align: center;
+        width:50px;
+        height:30px;
+        margin:1px;
+        border: 1px solid #E91E63;
+        border-radius: 5px;
+        font-family: Segoe UI;
+        font-size:17px;
+        font-weight:bold;
+        color: #E91E63;
+        background-color: #F9BED2;
+        }
+        .scieq:active {
+            background-color: #F9BED2;
+            color: #E91E63;
+            font-size:14px;
+            }
+
+    #calfootnote {
+                font-family: Segoe UI;
+                font-size:12px;
+                text-align: right;
+                }

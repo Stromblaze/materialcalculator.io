@@ -1,0 +1,152 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Stromium Calculator Online</title>
+    <link rel = "icon" type = "image/png" href = "calculator.svg">
+    <!-- For apple devices -->
+<link rel = "apple-touch-icon" type = "image/png" href = "calculator.svg"/>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Calculator, Root Calculator, Simple Calculator, Stromium Calculator, Evaluation, sin, sin calculator, cos, cos calculator, tan, tan calculator, 1/cos, 1/cos calculator, 1/sin, 1/sin calculator, 1/tan, 1/tan calculator, cos^-1, cos^-1 calculator, sin^-1, sin^-1 calculator, tan^-1, tan^1 calculator, root, Exponent, Exponent Calculator, cube root, cube root calculator, Calculator">
+  <meta name="description" content="Indian Online Calculator by Stromium.">
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#FFFFFF">
+
+
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body onload="myFunctionLoad()" style="margin:0;">
+
+
+<div id="loader"><br><br><br><br>
+<p style="text-align: center;">
+<img src="Calculator.svg" height="200px">
+<br>Stromium Calculator<br>Getting your page ready.<br><br>
+<img src="img/load.svg" width="11%" class="rotate" /></p>
+</div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+<div id="header">
+<p style="text-align: center; height: 10px">
+<a href="#" id="brand">Stromium Calculator</a>
+
+ <button id="toogle" onclick="myFunctioni()">
+<i onclick="myFunctionToggle(this)" class="fa fa-toggle-off"></i></button></p>
+
+
+<div class="dropdown">
+  <button onclick="myFunctionn()" class="dropbtn">
+<i onclick="toggleLike()" class="fa fa-bars"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAa__fNkDiBUQ0RPOEs1QkxHMk1PRkdKUlVENTVYSExCNy4u" target="_blank"><i class="fa fa-commenting"></i> Feedback</a>
+    <a href="#"><i class="fa fa-exclamation-circle"></i> Help</a>
+    <a href="About.html"><i class="fa fa-question-circle"></i> About</a>
+  </div>
+</div>
+
+
+<b>
+<a href="Scientific Calculator.html" id="link"><i class="fa fa-flask"></i>Scientific</a>
+<a href="" id="link"><i class="fa fa-balance-scale"></i>More</a>
+</b>
+</div>
+
+
+
+
+<center>
+    <form name="calc">
+        <div id="box">
+    <input type="text" name="result" size="30px" id="textcalc" readonly>
+    </div>
+    </form>
+<table>
+    <tr>
+    <td><button type="button" id="CLEAR" onclick="Clear()" class="operators">AC</button></td>
+    <td><button type="button" id="3.141592653589793" onclick="myFunction(this.id)" class="operatorr">π</button></td>  <!--Skaitlis 0-->
+    <td><button type="button" id="SQRT" onclick="doMath()" class="operatorr">√</button></td>
+    <td><button type="button" id="/" onclick="myFunction(this.id)" class="operatorr">÷</button></td>
+
+    </tr>
+  <tr>
+    <td><button type="button" id="1" onclick="myFunction(this.id)" class="operator">1</button></td>
+    <td><button type="button" id="2" onclick="myFunction(this.id)" class="operator">2</button></td>
+    <td><button type="button" id="3" onclick="myFunction(this.id)" class="operator">3</button></td>
+    <td><button type="button" id="*" onclick="myFunction(this.id)" class="operatorr">x</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" id="4" onclick="myFunction(this.id)" class="operator">4</button></td>
+    <td><button type="button" id="5" onclick="myFunction(this.id)" class="operator">5</button></td>
+    <td><button type="button" id="6" onclick="myFunction(this.id)" class="operator">6</button></td>
+    <td><button type="button" id="+" onclick="myFunction(this.id)" class="operatorr">+</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" id="7" onclick="myFunction(this.id)" class="operator">7</button></td>
+    <td><button type="button" id="8" onclick="myFunction(this.id)" class="operator">8</button></td>
+    <td><button type="button" id="9" onclick="myFunction(this.id)" class="operator">9</button></td>
+    <td><button type="button" id="-" onclick="myFunction(this.id)" class="operatorr">-</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" id="0" onclick="myFunction(this.id)" class="operator">0</button></td>
+    <td><button type="button" id="DOT" onclick="Clear()" class="operator">.</button></td>
+    <td><button type="button" id="CLEA" onclick="Clea()" class="operator">c</button></td>
+    <td><button type="button" id="ANS" onclick="compute()" class="operatort">=</button></td>
+  </tr>
+  <tr>
+    <td><button type="button" id="6.283185307179586" onclick="myFunction(this.id)" class="operator">τ</button></td>
+  </tr>
+</table>
+</center>
+
+
+</div><!--Side Nav-->
+<script>
+function myFunction(clickedId) {
+    document.calc.result.value+=clickedId;
+}
+function Clear() {
+    document.calc.result.value="";
+}
+function compute() {
+    try{
+    var inp=eval(document.calc.result.value);
+    document.calc.result.value=inp;
+    }catch(err){
+            document.calc.result.value="error";
+    }
+}
+function doMath(){
+  var inputNum1=document.calc.result.value;
+  var result = Math.sqrt(inputNum1);
+  document.calc.result.value = result;
+}
+</script>
+
+<script>
+var myVar;
+
+function myFunctionLoad() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
+
+

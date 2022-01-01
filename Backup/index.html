@@ -1,0 +1,99 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Stromium Calculator Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+	<body onload="myFunctionLoad()" style="margin:0;">
+
+<div id="loader"><br><br><br><br>
+<p style="text-align: center;">
+<img src="Calculator.svg" height="200px">
+<br>Stromium Calculator<br>Getting your page ready.<br><br>
+<img src="load.svg" width="11%" class="rotate" /></p>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+<div id="header">
+<div class="dropdown">
+  <button onclick="myFunctionMenu()" class="dropbtn"><i class="fa fa-bars"></i></button>
+
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#"><i class="fa fa-exclamation-circle"></i> Help</a>
+    <a href="#"><i class="fa fa-question-circle"></i> About</a>
+  </div>
+</div>
+
+<a href="#" id="brand"><img src="Stromium Calculator Online.svg" width="54%" /></a>
+  <button id="toogle" onclick="myFunction()">
+<i onclick="myFunctionToggle(this)" class="fa fa-toggle-off"></i>
+</button>
+
+
+
+<hr noshade></hr>
+
+<form  style="float: middle;">
+&nbsp;&nbsp;<input type="number" id="ro" placeholder="Place number to find root" >
+<button type="submit" onclick="sqrt()" id="rsub">=</button>
+<input type="reset" value="C"id="rset">
+</form>
+
+</div>
+		<div id="container">
+
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value" id="ro"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="number" id="00">00</button>
+					<button class="number" id="0">0</button>
+					<button class="operator" id=".">.</button>
+					<button class="operator" id="=">=</button>
+
+				</div>
+			</div>
+		</div>
+</div>
+<script>
+var myVar;
+
+function myFunctionLoad() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+		<script src="script.js"></script>
+
+</body>
+</html>
